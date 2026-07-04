@@ -133,6 +133,8 @@ description: 技术文章写作 skill。适用于技术深度文章、工具实�
 
 完整规则见 `references/style-rules.md`。写作、改写、质检前必须按需读取，尤其是：禁用词库、否定-纠正结构、假想读者错误、冗余确认副词、翻译腔动词、结构性元叙述、抽象名词主语、硬换行和中英文空格规则。
 
+Android、性能优化、Perfetto、系统机制类文章还要读取 `references/android-terminology.md`。这类文章里，`渲染链路`、`输入链路`、`Binder 调用链`、`BufferQueue`、`fence` 等词可能是准确术语，不能因为命中黑话词库就机械替换。
+
 ---
 
 ## 四、展示规范
@@ -194,7 +196,8 @@ description: 技术文章写作 skill。适用于技术深度文章、工具实�
   - 已有稳定译法的一律翻译:上下文(不是 context)、状态(不是 state)、缓存(不是 cache)、断言(不是 claim)、运行时、协议层、契约层。
   - 仍在抢的术语保留英文:prompt、embedding、tokenizer、harness、agent 等——这些在中文技术圈还没收敛到通用译法。
   - 判断标准:中文圈里讨论这个概念有没有统一术语?有就换中文;没统一就保留英文。保留英文的前提是"中文圈还没公认译法",不是"写作者不想翻"。
-- 一类例外:已经成为专有名词/标识符的英文保留——Android、Perfetto、Vsync、Binder、`trace_processor`、Workflow、Agent(作为 RN/LangChain 等框架里的具体组件名时)等。
+- 一类例外:已经成为专有名词/标识符的英文保留——Android、Perfetto、VSync、Binder、`trace_processor`、Workflow、Agent(作为 RN/LangChain 等框架里的具体组件名时)等。
+- Android 文章先按系统对象和观测证据判断术语。能对应到源码类、系统服务、线程、trace 轨道、slice/counter、buffer/fence 状态的词,按领域术语处理;没有具体对象和边界的,再按黑话处理。
 - 第一次出现的新概念,先给一句人话解释,再展开。
 - 不要为了"通俗"牺牲精确性——不要把术语解释成另一个更空的术语。
 

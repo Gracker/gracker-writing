@@ -25,6 +25,12 @@ npx skills add Gracker/gracker-writing --yes --global
 2. **有用**：读者看完知道怎么观察、怎么判断、怎么落手
 3. **易读**：不是把信息塞满，而是把复杂问题讲顺
 
+## Android 技术稿
+
+Android、性能优化、Perfetto、系统机制类稿件额外读取 `references/android-terminology.md`。
+
+这份规则用来区分「黑话」和「领域术语」：`渲染链路`、`输入链路`、`Binder 调用链`、`BufferQueue`、`fence`、`SurfaceFlinger`、`HWC`、`HAL`、`VSync` 等词只要能对应具体系统对象、trace 证据和起止边界，就按术语保留，不按黑话机械替换。
+
 ## Sample
 
 一段典型 AI 味的 Camera trace 分析——技术事实没错，但读起来别扭：
