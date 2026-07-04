@@ -31,6 +31,10 @@ Android、性能优化、Perfetto、系统机制类稿件额外读取 `reference
 
 这份规则用来区分「黑话」和「领域术语」：`渲染链路`、`输入链路`、`Binder 调用链`、`BufferQueue`、`fence`、`SurfaceFlinger`、`HWC`、`HAL`、`VSync` 等词只要能对应具体系统对象、trace 证据和起止边界，就按术语保留，不按黑话机械替换。
 
+## 基础校对
+
+`references/copy-editing.md` 补充中文技术长文的基础校对规则，覆盖可见正文与机器可读内容边界、直角引号、第二人称称呼、中英文留白、术语大小写、英文状态词误译、中文错词和数字表达。
+
 ## Sample
 
 一段典型 AI 味的 Camera trace 分析——技术事实没错，但读起来别扭：
