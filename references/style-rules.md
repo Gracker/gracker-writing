@@ -92,8 +92,10 @@ YYDS、绝绝子、破防、拿捏、上分、炸裂、封神、降维打击、�
 
 #### 3.3.4 比喻降格
 
+**总原则**:删除所有矫饰性表达。能直接说明时就直接说明，不要用隐喻、漂亮话或写作者姿态替代准确含义。Remove all mannered prose. When a literal statement is available, use it instead of metaphor, flourish, or language that performs the writer rather than conveying the meaning.
+
 **模式**:`你可以把 X 理解成 Y` / `你可以把 X 先记成一句话`
-**问题**:把精确的技术描述包装成口语化比喻,降低信息精度。允许比喻做脚手架,不允许代替技术解释。
+**问题**:把精确的技术描述包装成口语化比喻,降低信息精度。允许比喻做脚手架,不允许代替技术解释。有字面说法时，不用隐喻或漂亮话。
 
 - ❌ 你可以把 HWC2 里的 validateDisplay 先记成一句话:SurfaceFlinger 先提出一版"我想这样合",HWC 再回一句"这些 layer 我能直接接"
 - ✅ SurfaceFlinger 调用 validateDisplay() 提交 layer 集合,HWC 返回每个 layer 应走 DEVICE 还是 CLIENT composition

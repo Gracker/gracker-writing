@@ -17,13 +17,16 @@ description: 技术文章写作与社交输出把关。适用于技术深度文�
 
 ### 活人感基线
 
-写作、改写、发布前质检都要读取 `references/human-feel.md`。这份规则吸收 `human-writing` 的精华,但按 Gracker 的技术写作体系重新表达:具体事实优先、简单动词、少升格、不凑三项、术语稳定复用、观点来源明确、加粗克制。
+写作、改写、发布前质检都要读取 `references/human-feel.md`。这份规则吸收 `human-writing` 的精华,但按 Gracker 的技术写作体系重新表达:具体事实优先、简单动词、少升格、不凑三项、术语稳定复用、观点来源明确、加粗克制、不矫饰。
 
 活人感不靠口语化表演,靠三个东西:
 
 - **具体**:能看到场景、工具、版本、trace、代码路径、失败分支或读者反馈。
 - **取舍**:知道作者为什么这么判断,也知道这个判断在哪些条件下成立。
 - **不装**:不把普通事实写成时代趋势,不把材料整理写成深刻洞察,不把格式重点当成内容重点。
+
+**矫饰性表达**：删除所有矫饰性表达。能直接说明时就直接说明，不要用隐喻、漂亮话或写作者姿态替代准确含义。
+Remove all mannered prose. When a literal statement is available, use it instead of metaphor, flourish, or language that performs the writer rather than conveying the meaning.
 
 如果一段话没有具体对象、具体动作或具体证据,即使语气顺滑,也按 AI 味处理。
 
@@ -286,7 +289,7 @@ AI:按四层质检做检查,指出具体问题
 
 ## 六、质检体系
 
-完整四层质检规则见 `references/quality-gate.md`。写完后按 L1 硬性规则、L2 可读性、L3 内容深度、L4 活人感逐层检查；L4 必须纳入 `references/human-feel.md` 的具体性、意义通胀、同义词轮换和格式用力过猛检查。社交稿还要过 `references/social-output-gate.md`。质检只输出报告，不自动修改内容；社交稿质检不通过则重写正文，再交可发布版。
+完整四层质检规则见 `references/quality-gate.md`。写完后按 L1 硬性规则、L2 可读性、L3 内容深度、L4 活人感逐层检查；L4 必须纳入 `references/human-feel.md` 的具体性、意义通胀、同义词轮换、格式用力过猛和矫饰性表达检查。社交稿还要过 `references/social-output-gate.md`。质检只输出报告，不自动修改内容；社交稿质检不通过则重写正文，再交可发布版。
 
 ---
 
