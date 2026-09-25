@@ -160,7 +160,7 @@ DeepResearch、调研结果、测评综述要发成社交长文（知乎/公众�
 
 ## 三、禁用词与句式
 
-完整规则见 `references/style-rules.md`、`references/copy-editing.md` 和 `references/human-feel.md`。写作、改写、质检前必须按需读取，尤其是：禁用词库、意义通胀、顺手补分析、否定-纠正结构、假想读者错误、冗余确认副词、翻译腔动词、结构性元叙述、抽象名词主语、同义词轮换、硬换行、中英文空格、机器可读内容边界、术语大小写和中文错词规则。
+完整规则见 `references/style-rules.md`、`references/copy-editing.md`、`references/document-style-guide.md`、`references/chinese-copywriting-guidelines.md` 和 `references/human-feel.md`。写作、改写、质检前必须按需读取，尤其是：禁用词库、意义通胀、顺手补分析、否定-纠正结构、假想读者错误、冗余确认副词、翻译腔动词、结构性元叙述、抽象名词主语、同义词轮换、硬换行、中英文/数字空格、全角标点、标题层级、机器可读内容边界、术语大小写和中文错词规则。中文技术文档句式按阮一峰采用稿；中英文排版按排版指北采用稿。
 
 Android、性能优化、Perfetto、系统机制类文章还要读取 `references/android-terminology.md`。这类文章里，`渲染链路`、`输入链路`、`Binder 调用链`、`BufferQueue`、`fence` 等词可能是准确术语，不能因为命中黑话词库就机械替换。
 
@@ -276,6 +276,7 @@ AI:按四层质检做检查,指出具体问题
 - `真正|实际上|其实|根本|彻底|确实` 高频副词,单词累计过多要压掉,无信息增量的全部删
 - `最值得看|最值得|值得一看` 等用户明确不喜欢的评价 opener
 - `把画面|把卖点写成|把评测拆|叙事转到|官网把|跳得更|升幅大` 机构拟人/空比较；命中就改成「谁、数字、跟谁比」
+- 中文排版按 `references/chinese-copywriting-guidelines.md` 扫中英文/数字空格、单位空格、重复标点；按 `references/document-style-guide.md` 扫双重否定、被动堆叠、「降低 N 倍」、标题跳级
 - 结构性元叙述、假想读者错误、意义通胀、顺手补分析
 - 社交稿再按 `references/social-output-gate.md` 扫一遍：changelog 综述、否定开场、`一、二、三` 功能并列、口号收尾、名人硬挂钩、导演句、空比较
 - 社交稿出声测试：每句问「朋友之间会不会这么说」；不会就重写，不要只换词
