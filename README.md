@@ -37,6 +37,12 @@ Android、性能优化、Perfetto、系统机制类稿件额外读取 `reference
 
 中文技术文档句式、标题层级、数字增减和标点细则读取 `references/document-style-guide.md`（阮一峰《中文技术文档的写作规范》采用稿）。中英文空格、单位空格、全角标点和专有名词大小写读取 `references/chinese-copywriting-guidelines.md`（《中文文案排版指北》采用稿）。原文仓库分别为 https://github.com/ruanyf/document-style-guide 与 https://github.com/sparanoid/chinese-copywriting-guidelines。
 
+## 去 AI 味（语料层）
+
+`references/less-ai-tone.md` 采用 `lieflat-less-ai-tone` 的语料结论，但按本 skill 的两层结构重写：写作走 Gracker 作者层，精修走 11 条白名单和信息守恒。
+
+不把整份研究搬进来。迁入的是可定位规则，以及被推翻后精修时不得再改的条目：句长均匀、补虚词、删问句、把被动/名词化/长句当翻译腔、把「能翻回英文」当骨架问题。完整数据和脚本在已安装的 `lieflat-less-ai-tone` skill 里。
+
 ## 活人感规则
 
 `references/human-feel.md` 吸收 `human-writing` 的精华，但按 Gracker 的技术写作体系重写：具体事实优先、简单动词、少升格、可以重复术语、不凑三项、观点来源明确、加粗克制、不矫饰。

@@ -28,7 +28,9 @@ description: 技术文章写作与社交输出把关。适用于技术深度文�
 **矫饰性表达**：删除所有矫饰性表达。能直接说明时就直接说明，不要用隐喻、漂亮话或写作者姿态替代准确含义。
 Remove all mannered prose. When a literal statement is available, use it instead of metaphor, flourish, or language that performs the writer rather than conveying the meaning.
 
-如果一段话没有具体对象、具体动作或具体证据,即使语气顺滑,也按 AI 味处理。
+如果一段话没有具体对象、具体动作或具体证据,即使语气顺滑,也按作者层不合格处理——缺的是材料，不是「不够像人」。
+
+去 AI 味分两层，不要混用。语料层读 `references/less-ai-tone.md`：精修只改有触发标记的 11 条，信息不增不减。作者层仍读本段和 `human-feel.md`。精修禁止用「像人写的」去补口语、调句长、删问句、删比喻或把被动句当翻译腔；那些条目语料站不住。
 
 社交稿和资讯稿多加一条 **出声测试**：写完后把每句读出声。听起来像在给材料写导语、像在评论官网怎么排版、像在分析评测机构怎么组织文章，正常人不会对同事这么说，整句重写。主语用产品、模型、数字，不用「官网把画面/卖点/叙事……」。比较句必须带上两个具体数字，禁止「跳得更大」「升幅大」这种空比较。详情见 `references/human-feel.md` 的「思考路径」。
 
@@ -160,7 +162,9 @@ DeepResearch、调研结果、测评综述要发成社交长文（知乎/公众�
 
 ## 三、禁用词与句式
 
-完整规则见 `references/style-rules.md`、`references/copy-editing.md`、`references/document-style-guide.md`、`references/chinese-copywriting-guidelines.md` 和 `references/human-feel.md`。写作、改写、质检前必须按需读取，尤其是：禁用词库、意义通胀、顺手补分析、否定-纠正结构、假想读者错误、冗余确认副词、翻译腔动词、结构性元叙述、抽象名词主语、同义词轮换、硬换行、中英文/数字空格、全角标点、标题层级、机器可读内容边界、术语大小写和中文错词规则。中文技术文档句式按阮一峰采用稿；中英文排版按排版指北采用稿。
+完整规则见 `references/style-rules.md`、`references/less-ai-tone.md`、`references/copy-editing.md`、`references/document-style-guide.md`、`references/chinese-copywriting-guidelines.md` 和 `references/human-feel.md`。写作、改写、质检前必须按需读取。
+
+精修/去 AI 味先读 `references/less-ai-tone.md`：翻案腔、顿号过密、相邻句同构、揭晓式破折号、提示语/空转句冒号、序数词小标题、拟人喻体、概括盖数据、五种翻译腔、段首零主语。作者层再处理：禁用词、意义通胀、假想读者错误、冗余确认副词、技术稿悬空动词、结构性元叙述、同义词轮换、矫饰、社交导演句。中文技术文档句式按阮一峰采用稿；中英文排版按排版指北采用稿。
 
 Android、性能优化、Perfetto、系统机制类文章还要读取 `references/android-terminology.md`。这类文章里，`渲染链路`、`输入链路`、`Binder 调用链`、`BufferQueue`、`fence` 等词可能是准确术语，不能因为命中黑话词库就机械替换。
 
@@ -276,8 +280,9 @@ AI:按四层质检做检查,指出具体问题
 - `真正|实际上|其实|根本|彻底|确实` 高频副词,单词累计过多要压掉,无信息增量的全部删
 - `最值得看|最值得|值得一看` 等用户明确不喜欢的评价 opener
 - `把画面|把卖点写成|把评测拆|叙事转到|官网把|跳得更|升幅大` 机构拟人/空比较；命中就改成「谁、数字、跟谁比」
-- 中文排版按 `references/chinese-copywriting-guidelines.md` 扫中英文/数字空格、单位空格、重复标点；按 `references/document-style-guide.md` 扫双重否定、被动堆叠、「降低 N 倍」、标题跳级
-- 结构性元叙述、假想读者错误、意义通胀、顺手补分析
+- 中文排版按 `references/chinese-copywriting-guidelines.md` 扫中英文/数字空格、单位空格、重复标点；按 `references/document-style-guide.md` 扫双重否定、「降低 N 倍」、标题跳级。不要把被动句本身当不合格
+- 语料层按 `references/less-ai-tone.md` 扫翻案腔、空转句冒号、段首零主语、过长前置定语、「当……时」、前置话题壳、句首「然而/因此/此外」、「这意味着」复述。未命中的句子不要改
+- 结构性元叙述、假想读者错误、意义通胀、顺手补分析。正文「首先……其次」和问句不要当 AI 味删
 - 社交稿再按 `references/social-output-gate.md` 扫一遍：changelog 综述、否定开场、`一、二、三` 功能并列、口号收尾、名人硬挂钩、导演句、空比较
 - 社交稿出声测试：每句问「朋友之间会不会这么说」；不会就重写，不要只换词
 
@@ -296,10 +301,10 @@ AI:按四层质检做检查,指出具体问题
 
 ## 六、质检体系
 
-完整四层质检规则见 `references/quality-gate.md`。写完后按 L1 硬性规则、L2 可读性、L3 内容深度、L4 活人感逐层检查；L4 必须纳入 `references/human-feel.md` 的具体性、意义通胀、同义词轮换、格式用力过猛和矫饰性表达检查。社交稿还要过 `references/social-output-gate.md`。质检只输出报告，不自动修改内容；社交稿质检不通过则重写正文，再交可发布版。
+完整四层质检规则见 `references/quality-gate.md`。写完后按 L1 硬性规则、L2 可读性、L3 内容深度、L4 活人感逐层检查；L4 必须纳入 `references/human-feel.md` 的具体性、意义通胀、同义词轮换、格式用力过猛和矫饰性表达检查，以及 `references/less-ai-tone.md` 的语料层 11 条。社交稿还要过 `references/social-output-gate.md`。质检只输出报告，不自动修改内容；社交稿质检不通过则重写正文，再交可发布版。精修任务按白名单改写，不要把质检报告里的「语感 AI 味」扩成改写范围。
 
 ---
 
 ## 七、精修 mode
 
-当用户要求“精修”“润色但不重写”“只改 AI 味”时，读取 `references/refinement-mode.md` 和 `references/human-feel.md`。精修只动词句和格式，不改结构、事实判断或新增论点。
+当用户要求“精修”“润色但不重写”“只改 AI 味”时，先读 `references/less-ai-tone.md`，再读 `references/refinement-mode.md` 和 `references/human-feel.md`。精修只动词句和格式，不改结构、事实判断或新增论点。语料层白名单未命中的句子逐字保留。

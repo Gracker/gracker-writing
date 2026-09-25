@@ -26,7 +26,7 @@ Gracker 的写法要反过来：让事实保持原来的边角，让判断落在
 
 删除所有矫饰性表达。能直接说明时就直接说明，不要用隐喻、漂亮话或写作者姿态替代准确含义。
 
-Remove all mannered prose. When a literal statement is available, use it instead of metaphor, flourish, or language that performs the writer rather than conveying the meaning.
+这是 Gracker 技术稿的作者层，不是语料层 AI 痕迹。比喻本身人类用得比 AI 多；精修只把「像一位智慧的导师」这类理想化拟人喻体当 AI 味。具体的人当喻体、以及能带来新理解的比喻，不按 AI 味删。生成技术稿仍优先字面说法。
 
 ### 2. 动词用简单的
 
