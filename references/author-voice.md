@@ -47,6 +47,12 @@
 - 同文过时的命令、错误文件名和版本日期不能因“原话更生动”一起放回。
 - 过度绘制原稿的“点个赞”曾紧跟一个改变了外观的尝试，不能原样接到那里暗示验证成功。
 
+**机械删词把作者的话删坏了**
+
+- OpenClaw 实践原稿：“也要说实话。只想把它当 ChatGPT 替代品的人……”是在讲自己的使用边界。
+- 后续改稿删掉“说实话”，只剩“也要。”，句子已经不成立。
+- 恢复方向：找回整句“也要说实话”，连同后面不适用的人群一起读。词库命中只能提示检查，不能直接对子串做删除；若确实需要删提示语，也必须完整改好句子，不留下残句。
+
 ## 最后检查
 
 - 修改后的“我”都能在原文或用户材料中找到依据；没有新编实验、心理活动、设备、数据或读者反馈。
@@ -54,6 +60,7 @@
 - 作者原有的玩笑、称呼、设问和情绪，有具体问题才改；词频、句长、第一人称出现次数不是独立的删除理由。
 - 原稿中的生活旁白和对具体人的体谅仍在；英文稿也不能把它们压成通用的经验总结。
 - 保留技术纠错、版本限制、来源链接、代码和历史地址；恢复的字句不改变它们的含义。
+- 删词后回读整句和前后段，确认没有残句、悬空指代或缺失的转折；原有自我限定不因命中提示语而消失。
 - 不以修改数量交差。原文好好的，就保留。
 
 ## 样本出处
@@ -68,3 +75,4 @@
 - [2023 年记录](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/2023-review.md)
 - [三星重启案例](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/samsung_crash.md)
 - [Systrace Vsync](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/Android-Systrace-Vsync.md)、[Systrace CPU](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/Android-Systrace-CPU.md)
+- [OpenClaw 实践的较早原稿](https://github.com/Gracker/Blog/blob/6dabce4363c4b33928a8153d78fbb2f2422f207c/Blog/source/_posts/OpenClaw-Local-Practice.md)（用于核对“也要说实话”，当前 HEAD 已包含后续删词）
