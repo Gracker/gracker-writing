@@ -1,5 +1,7 @@
 # Writing Style Rules
 
+已有文章先按 [author-voice.md](author-voice.md) 保护作者声音。下面的词库和频次是排查线索，不足以独立删除原稿里的真实感受、第一人称、玩笑、设问或读者称呼；必须结合该句的含义判断。纯精修范围仍见 `less-ai-tone.md`，用户授权的原文恢复另按 `author-voice.md`。
+
 ## Contents
 
 - 词库
