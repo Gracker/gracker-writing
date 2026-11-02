@@ -12,6 +12,8 @@
 | 跟同行说话，有一点随口的玩笑 | Log2File 的“其他自己脑补”；Android Studio 的“已经完成了，没有下一步了” | 可以原样保留，不要求每句都新增技术知识。不要在别的文章里复制这些口头禅。 |
 | 承认写作和生活不那么整齐 | 通知中心“拖了一段时间才写完”；年终记录“各位看官一笑而过即可～” | 这些是作者的处境和与读者的关系，不能全当元叙述删掉。 |
 | 工程判断与个人感受并存 | 过度绘制入门写换公司、忙、发现自己懂得少，然后再讲工具和源码 | 不必把这样的开头改成三句摘要。进入技术解释后保持对象和边界清楚即可。 |
+| 用问题带读者走完推理 | 三星重启案例追问“那怎么编译过的呢”；Vsync 篇问能否早点合成、少等一会儿 | 原来的答案有误，可以改答案，保留促使作者继续查的问题。不要把设问一律换成结论句，也不要给没有问句的文章硬加问答。 |
+| 技术之外还有身边的人和生活 | 三星案例理解 SystemUI 开发者的辛苦，接到媳妇做这一块六年多、“晚上加个鸡腿”；CPU 篇结尾分享自己拍的照片 | 这些细节不必承担技术论据的任务。不要仅因偏离技术主题就删掉，也不要把具体的人改成泛泛的“开发者很辛苦”。没有原稿依据，不能添家人、照片或生活场景。 |
 
 这些写法的共同点是作者对具体事情有反应。第一人称、括号、设问、吐槽、感叹号都可能承载这种反应；它们本身不构成 AI 味。技术复盘、翻译札记、年终记录的口气可以不同，不要统一成冷静的说明书，也不要反过来给每篇补热闹。
 
@@ -50,6 +52,7 @@
 - 修改后的“我”都能在原文或用户材料中找到依据；没有新编实验、心理活动、设备、数据或读者反馈。
 - “没用过”“没走通”“当时这样判断”的不确定性还在，没有被改成权威断言。
 - 作者原有的玩笑、称呼、设问和情绪，有具体问题才改；词频、句长、第一人称出现次数不是独立的删除理由。
+- 原稿中的生活旁白和对具体人的体谅仍在；英文稿也不能把它们压成通用的经验总结。
 - 保留技术纠错、版本限制、来源链接、代码和历史地址；恢复的字句不改变它们的含义。
 - 不以修改数量交差。原文好好的，就保留。
 
@@ -63,3 +66,5 @@
 - [过度绘制入门](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/android-performance-optimization-overdraw-1.md)、[过度绘制实战](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/android-performance-optimization-overdraw-2.md)
 - [Android Studio 源码阅读](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/view-android-source-code-with-androidstudio.md)
 - [2023 年记录](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/2023-review.md)
+- [三星重启案例](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/samsung_crash.md)
+- [Systrace Vsync](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/Android-Systrace-Vsync.md)、[Systrace CPU](https://github.com/Gracker/Blog/blob/faa1ed543aec17bf8f0c8a1f1348f888c3f6784d/Blog/source/_posts/Android-Systrace-CPU.md)
