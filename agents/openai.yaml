@@ -1,4 +1,4 @@
 interface:
   display_name: "Gracker Writing"
-  short_description: "Chinese technical long-form writing"
-  default_prompt: "Use $gracker-writing to draft or revise this Chinese technical article."
+  short_description: "技术文章写作、审阅与精修；保留作者声音，按材料和语境检查 AI 味"
+  default_prompt: "使用 $gracker-writing 处理这篇文章，按我的请求写作、审阅或精修，保留事实边界与作者声音。"

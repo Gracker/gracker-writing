@@ -1,80 +1,44 @@
-# Gracker Writing Skill
+# Gracker Writing
 
-技术文章写作 skill。
+用于技术文章写作、审阅、精修和作者口吻恢复，也为社交稿提供表达检查。
+
+写清问题和判断依据，同时保留作者的观察、取舍、疑问和生活细节。去 AI 味不靠禁词表，恢复活人感也不靠添加口头禅或编造经历。
 
 ## 安装
 
-默认安装仓库当前默认分支，不需要版本号：
+安装仓库默认分支的当前版本：
 
 ```bash
 npx skills add Gracker/gracker-writing --yes --global
 ```
 
-需要可复现安装时，先发布 Git tag 或 release，再按安装器支持的 tag / commit 语法固定版本；当前命令不写虚构版本号。
+入口是 [SKILL.md](SKILL.md)。可以直接要求“按我的风格写”“精修这篇文章”“只给 review 意见”或“对照旧稿恢复作者口吻”。改稿范围由请求决定，不默认重写全文。
 
-## 触发词
+## 如何使用
 
-写文章、写公众号、写博客、帮我写篇稿、按我的风格写、技术长文写作
+- **新稿**：从读者问题和已有材料组织内容，选择适合体裁的结构。
+- **精修**：修具体的含义、逻辑或表达问题，保留原有观点与叙述方式。
+- **口吻恢复**：对照可信原稿找回被删的作者表达，同时保留已确认的技术纠错。
+- **只审查**：给出具体位置、问题与影响，不擅自改正文。
+- **社交与调研稿**：按读者目的选择材料，不强制反转开场、测评分数或行动清单。
 
-## 核心原则
+## 参考文件
 
-**目标不是让读者觉得作者很懂，而是让读者真的看懂、能拿去用、知道边界。**
+主入口按任务引导读取，不需要每次加载全部资料。
 
-技术文章的核心是三件事：
-1. **准确**：术语、版本、路径、代码、数据都能对上
-2. **有用**：读者看完知道怎么观察、怎么判断、怎么落手
-3. **易读**：不是把信息塞满，而是把复杂问题讲顺
+| 用途 | 参考 |
+| --- | --- |
+| 作者声音与自然表达 | [author-voice](references/author-voice.md)、[human-feel](references/human-feel.md) |
+| 结构与局部表达 | [style-rules](references/style-rules.md)、[less-ai-tone](references/less-ai-tone.md) |
+| 改稿范围与复核 | [refinement-mode](references/refinement-mode.md)、[quality-gate](references/quality-gate.md) |
+| 校对、文档组织与排版 | [copy-editing](references/copy-editing.md)、[document-style-guide](references/document-style-guide.md)、[chinese-copywriting-guidelines](references/chinese-copywriting-guidelines.md) |
+| 特定领域 | [android-terminology](references/android-terminology.md)，仅涉及该领域时读取 |
+| 社交与调研表达 | [social-output-gate](references/social-output-gate.md)、[research-social-longform](references/research-social-longform.md) |
 
-## Android 技术稿
+通用方法、作者偏好和领域说明分别维护。项目术语、渠道投递、自动任务行为与文件落点留在当前项目或调用任务中，不从单篇稿件直接升级成通用规则。已有材料中的代码、数据、引用和作者经历，都不能为了文风失真。
 
-Android、性能优化、Perfetto、系统机制类稿件额外读取 `references/android-terminology.md`。
+## 来源与许可
 
-这份规则用来区分「黑话」和「领域术语」：`渲染链路`、`输入链路`、`Binder 调用链`、`BufferQueue`、`fence`、`SurfaceFlinger`、`HWC`、`HAL`、`VSync` 等词只要能对应具体系统对象、trace 证据和起止边界，就按术语保留，不按黑话机械替换。
+部分参考文件吸收了已有写作资料，并在对应文件中保留来源与采用范围；这些资料是编辑判断的参考，不是可据以识别作者身份的检测器。
 
-## 基础校对
-
-`references/copy-editing.md` 补充中文技术长文的基础校对规则，覆盖可见正文与机器可读内容边界、直角引号、第二人称称呼、中英文留白、术语大小写、英文状态词误译、中文错词和数字表达。
-
-中文技术文档句式、标题层级、数字增减和标点细则读取 `references/document-style-guide.md`（阮一峰《中文技术文档的写作规范》采用稿）。中英文空格、单位空格、全角标点和专有名词大小写读取 `references/chinese-copywriting-guidelines.md`（《中文文案排版指北》采用稿）。原文仓库分别为 https://github.com/ruanyf/document-style-guide 与 https://github.com/sparanoid/chinese-copywriting-guidelines。
-
-## 去 AI 味（语料层）
-
-`references/less-ai-tone.md` 采用 `lieflat-less-ai-tone` 的语料结论，但按本 skill 的两层结构重写：写作走 Gracker 作者层，精修走 11 条白名单和信息守恒。
-
-不把整份研究搬进来。迁入的是可定位规则，以及被推翻后精修时不得再改的条目：句长均匀、补虚词、删问句、把被动/名词化/长句当翻译腔、把「能翻回英文」当骨架问题。完整数据和脚本在已安装的 `lieflat-less-ai-tone` skill 里。
-
-## 活人感规则
-
-`references/human-feel.md` 吸收 `human-writing` 的精华，但按 Gracker 的技术写作体系重写：具体事实优先、简单动词、少升格、可以重复术语、不凑三项、观点来源明确、加粗克制、不矫饰。
-
-这部分不要求写得更口语，而是避免 AI 把材料整理得过分顺滑：普通事实不要拔高成趋势，事实句后面不要顺手补没有证据的分析，同一个系统对象不要为了避免重复换一堆称呼。能直说就直说，不要用隐喻、漂亮话或写作者姿态替代准确含义。
-
-## Sample
-
-一段典型 AI 味的 Camera trace 分析——技术事实没错，但读起来别扭：
-
-**修改前**：
-
-> 分析 Camera 页面时，第一个要回答的问题很关键：真正的 Producer 其实不在 App 主进程里。sensor 的采集节奏由 capture request 参数决定，不等 vsync-app。cameraserver 里的 RequestThread 才是下发 request 的地方，它的节奏决定了后面整条链能不能按时交付。所以只盯宿主 main 线程就解释不了画面为什么卡——真正拖慢的往往是某一路 consumer 没及时 release buffer，反压到 HAL 侧。
-
-**修改后**（骨架换回中文）：
-
-> 分析 Camera 页面时，Producer 不在 App 主进程——cameraserver 里的 RequestThread 负责下发 request，它的节奏决定了整条链能不能按时交付。sensor 的采集节奏由 capture request 参数决定，不等 vsync-app。只盯宿主 main 线程解释不了画面卡顿——拖慢的往往是某一路 consumer 没及时 release buffer，反压回 HAL。
-
-**对应 SKILL 规则**：
-
-| 改动 | 规则 |
-|------|------|
-| `第一个要回答的问题很关键：[内容]` → 直接讲内容 | 3.3.9 形容词 + 冒号起手式 |
-| `真正的 Producer 其实不在` → `Producer 不在` | 3.3.6 冗余确认副词 + 3.3.3 口水过渡词 |
-| `RequestThread 才是下发 request 的地方` → `RequestThread 负责下发 request` | 翻译腔骨架，典型是 `X is the place where Y does Z` 的直译 |
-| `真正拖慢的` → `拖慢的` | 3.3.6 冗余确认副词 |
-| `反压到 HAL 侧` → `反压回 HAL` | 英文方位尾巴 `back to the X side` 的残留 |
-
-五处改动分布在 5 句话里，没有任何一句是被整体重写的——只是把每句里藏着的英文骨架抽掉。这就是**翻译腔修改的典型密度**：AI 生成的中文不会每句都踩点，但一段里几处小瑕疵累加起来，就是读者一段话看两行就能闻到的那股味儿。
-
-修改思路不在"换词"——而是**先识别翻译腔骨架**（AI 像在英文里把意思想清楚再一字字换中文），然后**用中文本来的讲法重说一遍**。
-
-## License
-
-MIT
+本仓库使用 [MIT License](LICENSE)。
