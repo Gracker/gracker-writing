@@ -31,6 +31,7 @@ npx skills add Gracker/gracker-writing --yes --global
 | 作者声音与自然表达 | [author-voice](references/author-voice.md)、[human-feel](references/human-feel.md) |
 | 结构与局部表达 | [style-rules](references/style-rules.md)、[less-ai-tone](references/less-ai-tone.md) |
 | 排查词组与改写对照 | [writing-examples](references/writing-examples.md)：保留实用案例，按上下文判断改或留 |
+| 完整文章与长帖验收 | [whole-article-review](references/whole-article-review.md)：检查全文推进、重复渲染与结论范围，区分文风问题和事实待核查 |
 | 改稿范围与复核 | [refinement-mode](references/refinement-mode.md)、[quality-gate](references/quality-gate.md) |
 | 校对、文档组织与排版 | [copy-editing](references/copy-editing.md)、[document-style-guide](references/document-style-guide.md)、[chinese-copywriting-guidelines](references/chinese-copywriting-guidelines.md) |
 | 特定领域 | [android-terminology](references/android-terminology.md)，仅涉及该领域时读取 |
